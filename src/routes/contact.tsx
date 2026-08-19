@@ -34,7 +34,8 @@ function Contact() {
               <MapPin className="mt-1 size-7 shrink-0 text-primary" aria-hidden="true" />
               <div>
                 <h2 className="text-2xl">Vera's Boutique</h2>
-                <p className="text-xl text-muted-foreground">Gennep, Nederland</p>
+                <p className="text-xl text-muted-foreground">Zandstraat 44</p>
+                <p className="text-xl text-muted-foreground">6591 CX Gennep</p>
               </div>
             </div>
 
