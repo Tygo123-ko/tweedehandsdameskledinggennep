@@ -7,7 +7,8 @@ export function SiteFooter() {
         <div>
           <h2 className="font-display text-2xl text-primary">Vera's Boutique</h2>
           <p className="mt-2 text-muted-foreground">Tweedehands dameskleding</p>
-          <p className="text-muted-foreground">Gennep, Nederland</p>
+          <p className="text-muted-foreground">Zandstraat 44</p>
+          <p className="text-muted-foreground">6591 CX Gennep</p>
         </div>
 
         <div>
