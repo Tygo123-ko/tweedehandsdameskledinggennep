@@ -28,7 +28,7 @@ const redenen = [
   { icon: Tag, titel: "Betaalbare prijzen", tekst: "Mooie kleding voor een vriendelijke prijs." },
   { icon: Leaf, titel: "Duurzame keuze", tekst: "Kleding krijgt bij ons een tweede leven." },
   { icon: Sparkles, titel: "Unieke kledingstukken", tekst: "Vaak maar één exemplaar per maat." },
-  { icon: Heart, titel: "Persoonlijke service", tekst: "Wij helpen u graag met alle rust en aandacht." },
+  { icon: Heart, titel: "service", tekst: "u kunt snuffelen in een rustige ontspannen sfeer. alle kleding hangt op maat" },
 ];
 
 function Index() {
