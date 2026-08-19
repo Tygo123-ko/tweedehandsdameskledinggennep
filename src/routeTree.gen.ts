@@ -10,33 +10,73 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CollectieRouteImport } from './routes/collectie'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as GalerijRouteImport } from './routes/galerij'
+import { Route as OverOnsRouteImport } from './routes/over-ons'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CollectieRoute = CollectieRouteImport.update({
+  id: '/collectie',
+  path: '/collectie',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalerijRoute = GalerijRouteImport.update({
+  id: '/galerij',
+  path: '/galerij',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OverOnsRoute = OverOnsRouteImport.update({
+  id: '/over-ons',
+  path: '/over-ons',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/collectie': typeof CollectieRoute
+  '/contact': typeof ContactRoute
+  '/galerij': typeof GalerijRoute
+  '/over-ons': typeof OverOnsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/collectie': typeof CollectieRoute
+  '/contact': typeof ContactRoute
+  '/galerij': typeof GalerijRoute
+  '/over-ons': typeof OverOnsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/collectie': typeof CollectieRoute
+  '/contact': typeof ContactRoute
+  '/galerij': typeof GalerijRoute
+  '/over-ons': typeof OverOnsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/collectie' | '/contact' | '/galerij' | '/over-ons'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/collectie' | '/contact' | '/galerij' | '/over-ons'
+  id: '__root__' | '/' | '/collectie' | '/contact' | '/galerij' | '/over-ons'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CollectieRoute: typeof CollectieRoute
+  ContactRoute: typeof ContactRoute
+  GalerijRoute: typeof GalerijRoute
+  OverOnsRoute: typeof OverOnsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +88,43 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/collectie': {
+      id: '/collectie'
+      path: '/collectie'
+      fullPath: '/collectie'
+      preLoaderRoute: typeof CollectieRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/galerij': {
+      id: '/galerij'
+      path: '/galerij'
+      fullPath: '/galerij'
+      preLoaderRoute: typeof GalerijRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/over-ons': {
+      id: '/over-ons'
+      path: '/over-ons'
+      fullPath: '/over-ons'
+      preLoaderRoute: typeof OverOnsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CollectieRoute: CollectieRoute,
+  ContactRoute: ContactRoute,
+  GalerijRoute: GalerijRoute,
+  OverOnsRoute: OverOnsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
