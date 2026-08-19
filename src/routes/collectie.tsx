@@ -24,10 +24,10 @@ export const Route = createFileRoute("/collectie")({
 });
 
 const categorieen = [
-  { titel: "Blouses", tekst: "Van klassiek tot kleurrijk, in alle maten.", src: photos.rackWall },
-  { titel: "Jurken", tekst: "Voor elke dag en voor bijzondere gelegenheden.", src: photos.entrance },
-  { titel: "Broeken", tekst: "Comfortabele pantalons, jeans en rokken.", src: photos.archway },
-  { titel: "Jassen", tekst: "Warme mantels, vesten en zomerjasjes.", src: photos.coats },
+  { titel: "Blouses", tekst: "Van klassiek tot kleurrijk, in alle maten. Prijzen tussen € 7,50 en € 9,50.", src: photos.rackWall },
+  { titel: "Jurken", tekst: "Voor elke dag en voor bijzondere gelegenheden. Prijzen tussen € 9,50 en € 12,50.", src: photos.entrance },
+  { titel: "Broeken", tekst: "Comfortabele pantalons, jeans en rokken. Prijzen tussen € 7,50 en € 9,50.", src: photos.archway },
+  { titel: "Jassen", tekst: "Warme mantels, vesten en zomerjasjes. Prijzen tussen € 14,50 en € 24,50.", src: photos.coats },
   { titel: "Schoenen", tekst: "Laarzen, pumps en nette instappers.", src: photos.shoes },
   { titel: "Accessoires", tekst: "Sieraden, tassen, riemen en sjaals.", src: photos.belts },
 ];
