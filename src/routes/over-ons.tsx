@@ -29,9 +29,8 @@ function OverOns() {
       <Reveal>
         <h1 className="text-4xl text-primary sm:text-5xl">Over Vera's Boutique</h1>
         <p className="mt-6 text-xl leading-relaxed">
-          Vera's Boutique is een gezellige tweedehands kledingwinkel in het centrum van Gennep. Bij ons
-          staat u als klant centraal: u mag rustig rondkijken, alles passen en zoveel vragen stellen als u
-          wilt. Wij nemen graag de tijd voor u.
+          Vera's Boutique is een gezellige tweedehands kledingwinkel in het centrum van Gennep. U
+          mag rustig rondkijken, alles passen en zoveel vragen stellen als u wilt.
         </p>
         <p className="mt-4 text-xl leading-relaxed">
           Onze collectie wisselt voortdurend, omdat wij dagelijks mooie kleding binnenkrijgen. Van
@@ -39,7 +38,7 @@ function OverOns() {
           uitgezocht, netjes en overzichtelijk op maat gesorteerd.
         </p>
         <p className="mt-4 text-xl leading-relaxed">
-          Zo vindt u bij ons niet alleen een mooi kledingstuk, maar ook een warm welkom.
+          Hier vindt meest goede en goedkoopste kleding stukken, alle kleding zit er nog goed uit als nieuw
         </p>
       </Reveal>
 
