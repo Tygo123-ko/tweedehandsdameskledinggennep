@@ -96,7 +96,7 @@ function Index() {
             <h2 className="text-3xl text-primary sm:text-4xl">Even rustig rondkijken</h2>
             <p className="mt-5 text-xl">
               Onze winkel is licht, overzichtelijk en gezellig ingericht. Neem gerust de tijd, pas op uw
-              gemak en vraag ons om advies. en een praatje hoort er gewoon bij.
+              gemak en vraag ons om advies. en een gezellig praatje hoort er gewoon bij.
             </p>
             <Link
               to="/contact"
